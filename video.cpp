@@ -26,8 +26,8 @@ int Video::getDuration() const
 //Shows main information about the file
 void Video::info(ostream& stream) const
 {
-    stream << "It's a video " << endl;
     Multimedia::info(stream);
+    stream << "It's a video " << endl;
     stream << "Duration : " << duration << endl;
 }
 

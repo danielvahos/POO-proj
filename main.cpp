@@ -7,6 +7,7 @@
 #include <stdio.h>
 
 #include "multimedia.h"
+#include "photo.h"
 #include "video.h"
 
 using namespace std;
