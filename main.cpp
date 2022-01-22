@@ -4,6 +4,11 @@
 //
 
 #include <iostream>
+#include <stdio.h>
+
+#include "multimedia.h"
+#include "video.h"
+
 using namespace std;
 
 int main(int argc, const char* argv[])
