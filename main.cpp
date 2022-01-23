@@ -10,6 +10,7 @@
 #include "photo.h"
 #include "video.h"
 #include "film.h"
+#include "groupe.h"
 
 using namespace std;
 
@@ -35,7 +36,19 @@ int main(int argc, const char* argv[])
 	film->setChapterduration(newChapterDurations,3);
 	film->info(cout);
 
+    //Step 7, methods made on film files
 
+    //Step 8
+    Groupe * g1 = new Groupe("Group 1");
+    Groupe * g2 = new Groupe("Group 2");
+    //Group 1 with files number 0 and 1
+    g1->push_back(medialist[0]);
+    g1->push_back(medialist[1]);
+    //Group 2 with just file number 1
+    g2->push_back(medialist[1]);
+    //Now it's important to see
+    g1-> info(cout);
+    g2-> info(cout);
 
     /*
     std::cout << "Hello brave new world" << std::endl;
