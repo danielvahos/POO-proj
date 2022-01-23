@@ -9,6 +9,7 @@
 #include "multimedia.h"
 #include "photo.h"
 #include "video.h"
+#include "film.h"
 
 using namespace std;
 
@@ -26,6 +27,13 @@ int main(int argc, const char* argv[])
 	}
     //-----------------------------------------------
 
+    //Step 6, Films
+	int chapterDurations[]= {11, 12};
+	Film *film = new Film("Hobbit", "./Hobbitvideo.mp4", 10, 12,chapterDurations);
+	film->info(cout);
+	int newChapterDurations[]= {11, 5, 12};
+	film->setChapterduration(newChapterDurations,3);
+	film->info(cout);
 
     /*
     std::cout << "Hello brave new world" << std::endl;
