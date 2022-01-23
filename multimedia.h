@@ -27,7 +27,7 @@ public:
     string getPath() const;
 
     virtual void info(ostream& stream = cout) const;
-    virtual void playMultimedia() {};
+    virtual void play() {};
 };
 
-#endif 
+#endif
