@@ -16,6 +16,10 @@ public:
     int * getChapterduration() const;
     int getChapternum() const;
     void setChapterduration(const int* chapterduration,int chapternum);
+    //Step 7
+    Film(const Film& from);
+    Film& operator=(const Film& from);
+
 };
 
 #endif

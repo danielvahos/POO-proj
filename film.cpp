@@ -50,3 +50,35 @@ void Film::setChapterduration(const int* chapterduration, int chapternum)
         this->chapterduration[i] = chapterduration[i];
     }
 }
+
+// Step 7
+
+Film::Film(const Film& from) : Video(from)
+{
+    for (int i = 0; i < from.chapternum; i++)
+    {
+        chapterduration[i] = from.chapterduration[i];
+    }
+    chapternum = from.chapternum;
+}
+
+
+
+Film& Film::operator=(const Film& from)
+{
+    Video::operator=(from);
+    if (chapterduration && from.chapterduration)
+        *chapterduration = *(from.chapterduration);
+    else
+    {
+        delete chapterduration;
+        for (int i = 0; i < from.chapternum; i++)
+        {
+            chapterduration[i] = from.chapterduration[i];
+        }
+    }
+    chapternum = from.chapternum;
+    return *this;
+}
+
+//--------------------------------------------

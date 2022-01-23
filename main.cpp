@@ -35,6 +35,8 @@ int main(int argc, const char* argv[])
 	film->setChapterduration(newChapterDurations,3);
 	film->info(cout);
 
+
+
     /*
     std::cout << "Hello brave new world" << std::endl;
     return 0;
