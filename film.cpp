@@ -29,7 +29,7 @@ void Film::info(ostream& stream) const
 }
 
 
-const int* Film::getChapterduration() const
+int* Film::getChapterduration() const
 {
     return chapterduration;
 }
