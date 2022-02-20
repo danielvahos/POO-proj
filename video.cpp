@@ -32,7 +32,7 @@ void Video::info(ostream& stream) const
 }
 
 //Plays the video
-void Video::play() const
+void Video::play() const override
 {
     system(("mpv " + this->getPath() + '&').c_str());
 }
